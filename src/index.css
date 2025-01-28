@@ -6,15 +6,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #FF0000;
+  background-image: url('/public/pokelogo.png'); /* Correctly reference the image */
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 50% auto;
+  z-index: -100;
 }
 
-#pokeTop {
-  background-color: #FF0000;
-}
-
-#pokeBottom {
-  background-color: #ffffff;
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
