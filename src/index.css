@@ -5,6 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FF0000;
+}
+
+#pokeTop {
+  background-color: #FF0000;
+}
+
+#pokeBottom {
+  background-color: #ffffff;
 }
 
 code {

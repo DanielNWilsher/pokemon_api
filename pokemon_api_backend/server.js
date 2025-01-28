@@ -13,8 +13,11 @@ app.get('/hello', (req, res) => {
 async function fetchPokemonData(req, res) {
     try {
         const golduckSpecies = await P.getPokemonSpeciesByName("golduck");
+        const raichu = await P.getPokemonByName("raichu");
+        const raichuName = raichu.name
+        const englishName = golduckSpecies.names.filter(pokeAPIName => pokeAPIName.language.name === 'en')[0].name;
         const frenchName = golduckSpecies.names.filter(pokeAPIName => pokeAPIName.language.name === 'fr')[0].name;
-        res.send(frenchName);
+        res.send(frenchName + ' = ' + englishName + ' & ' + raichuName);
     } catch (error) {
         console.error(error);
     }

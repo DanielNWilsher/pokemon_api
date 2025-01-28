@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './App.css';
 
 function App() {
     const [message, setMessage] = useState('');
@@ -10,7 +11,7 @@ function App() {
     }, []);
 
     return (
-        <div>
+        <div className="App">
             <h1>{message}</h1>
         </div>
     );
