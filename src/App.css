@@ -15,7 +15,6 @@ h1 {
 
 .pokedex-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   padding: 20px;
 }
@@ -27,11 +26,20 @@ h1 {
   padding: 10px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Set a fixed width */
+  margin: 0 auto; /* Center the card horizontally */
 }
 
 .pokemon-image {
   width: 100px;
   height: 100px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
 }
 
 code {
