@@ -33,7 +33,15 @@ function App() {
                 className='pokemon-header'/>
             </div>
             {currentPokemon ? (
-                <div className="pokemon-card">
+                <div
+                    className="pokemon-card"
+                    style={{
+                        backgroundImage: `url("/images/poke-dex-surround.jpeg")`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center",
+                    }}
+                >
                     <img
                         src={currentPokemon.sprites.front_default}
                         alt={currentPokemon.name}

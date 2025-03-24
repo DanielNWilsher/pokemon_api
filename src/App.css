@@ -37,10 +37,6 @@ h1 {
 
 .pokemon-card {
   position: relative; /* Allows positioning of child elements */
-  background-image: url("/poke-dex-surround.jpg"); /* Set the background image */
-  background-size: cover; /* Ensure the background covers the entire card */
-  background-repeat: no-repeat; /* Prevent the background from repeating */
-  background-position: center; /* Center the background image */
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px; /* Add padding for spacing */
