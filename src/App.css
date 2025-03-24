@@ -37,7 +37,7 @@ h1 {
 
 .pokemon-card {
   position: relative; /* Allows positioning of child elements */
-  background-image: url("/Users/danielwilsher/Documents/pokemon_api/pokemon_api/public/poke-dex-surround.jpg"); /* Set the background image */
+  background-image: url("/../pokemon_api/public/poke-dex-surround.jpg"); /* Set the background image */
   background-size: cover; /* Ensure the background covers the entire card */
   background-repeat: no-repeat; /* Prevent the background from repeating */
   background-position: center; /* Center the background image */
