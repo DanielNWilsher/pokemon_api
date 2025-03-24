@@ -27,7 +27,11 @@ function App() {
 
     return (
         <div className="App">
-            <h1>Pokédex</h1>
+            <div>
+                <img src="/pokelogo.png" 
+                alt="Pokédex Logo" 
+                className='pokemon-header'/>
+            </div>
             {currentPokemon ? (
                 <div className="pokemon-card">
                     <img
@@ -41,11 +45,17 @@ function App() {
                 <p>Loading...</p>
             )}
             <div className="navigation-buttons">
+                <button onClick={() => setCurrentIndex(1)} disabled={currentIndex === 1}>
+                    Start
+                </button>
                 <button onClick={handlePrevious} disabled={currentIndex === 1}>
                     Previous
                 </button>
                 <button onClick={handleNext} disabled={currentIndex === 151}>
                     Next
+                </button>
+                <button onClick={() => setCurrentIndex(151)} disabled={currentIndex === 151}>
+                    End
                 </button>
             </div>
         </div>

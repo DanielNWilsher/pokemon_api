@@ -13,6 +13,22 @@ h1 {
   margin: 20px 0;
 }
 
+.pokemon-header {
+  size: 50% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ff0000;
+  color: white;
+  width: 50% auto; /* Set a fixed width */
+  margin: 0 auto; /* Center the card horizontally */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center items horizontally */
+
+}
+
 .pokedex-grid {
   display: grid;
   gap: 20px;
@@ -20,19 +36,28 @@ h1 {
 }
 
 .pokemon-card {
-  background-color: white;
+  position: relative; /* Allows positioning of child elements */
+  background-image: url("/Users/danielwilsher/Documents/pokemon_api/pokemon_api/public/poke-dex-surround.jpg"); /* Set the background image */
+  background-size: cover; /* Ensure the background covers the entire card */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  background-position: center; /* Center the background image */
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px; /* Add padding for spacing */
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 200px; /* Set a fixed width */
+  height: 375px; /* Set a fixed height to fit the background */
   margin: 0 auto; /* Center the card horizontally */
+  z-index: 0; /* Ensure it is below other elements */
 }
 
 .pokemon-image {
-  width: 100px;
-  height: 100px;
+  position: relative; /* Ensure the image is positioned relative to the card */
+  z-index: 1; /* Place the Pokémon image above the background */
+  width: 100px; /* Adjust the size of the Pokémon image */
+  height: 100px; /* Maintain aspect ratio */
+  margin-top: 90px; /* Add margin to lower the image */
 }
 
 .navigation-buttons {
